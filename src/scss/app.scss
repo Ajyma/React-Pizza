@@ -24,6 +24,22 @@ body {
 .content {
   padding: 40px 0;
 
+  &__error-info{
+    margin: 100px auto;
+    width: 500px;
+    text-align: center;
+
+    h2{
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    p{
+      font-size: 20px;
+    }
+  }
+
   &__title {
     font-weight: 800;
     font-size: 38px;
@@ -216,6 +232,27 @@ body {
             display: none;
           }
         }
+
+        &--disabled {
+          opacity: 0.4;
+          border-color: #787878;
+
+          &:active {
+            transform: none;
+          }
+
+          &:hover{
+            background-color: transparent;
+            
+            svg path {
+              fill: #787878;
+            }
+          }
+
+          svg path {
+            fill: #787878;
+          }
+        }
       }
 
       b {
@@ -334,17 +371,18 @@ body {
   }
 
   &--empty {
-    margin: 0 auto;
-    width: 560px;
+    margin: 80px auto;
+    width: 620px;
     text-align: center;
-
+    
     h2 {
-      font-size: 32px;
-      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 36px;
+      margin-bottom: 15px;
     }
 
     p {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 145.4%;
       letter-spacing: 0.01em;
       color: #777777;
