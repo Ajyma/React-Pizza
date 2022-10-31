@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: space-between;
 
-    @media (max-width: 645px) {
+    @media (max-width: 768px) {
       flex-direction: column;
 
       .header__cart{
@@ -36,6 +36,31 @@
 
     p {
       color: #7b7b7b;
+    }
+  }
+  .Search_root__vToH-{
+    margin-left: 40%;
+    margin-top: 20px;
+    @media (max-width: 425px) {
+      margin-left: 65%;
+    }
+    @media (max-width: 375px) {
+      margin-left: 73%;
+    } 
+    @media (max-width: 320px) {
+      margin-left: 87%;
+    }
+
+    input{
+      @media (max-width: 425px) {
+        width: 350px;
+      }
+      @media (max-width: 375px) {
+        width: 300px;
+      }
+      @media (max-width: 320px) {
+        width: 250px;
+      }
     }
   }
 }

@@ -1,4 +1,9 @@
 .root{
+  @media (max-width: 425px) {
+    display: flex;
+    justify-content: center;
+  }
+
   li {
     display: inline-block;
 
