@@ -137,6 +137,12 @@ body {
     display: flex;
     align-items: center;
     font-size: 32px;
+    @media (max-width: 425px) {
+      font-size: 27px;
+    }
+    @media (max-width: 392px) {
+      font-size: 24px;
+    }
 
     svg {
       position: relative;
@@ -156,12 +162,15 @@ body {
     align-items: center;
     cursor: pointer;
     @include noselect();
-
+    
     span {
       display: inline-block;
       margin-left: 7px;
       color: #b6b6b6;
       font-size: 18px;
+      @media (max-width: 375px) {
+        font-size: 15px;
+      }
     }
 
     span,
@@ -238,6 +247,9 @@ body {
       p {
         font-size: 18px;
         color: #8d8d8d;
+        @media (max-width: 425px) {
+          font-size: 14px;
+        }
       }
     }
 
@@ -250,11 +262,11 @@ body {
         width: 17%;
       }
       @media (max-width: 425px) {
-        width: 30%;
+        width: 28%;
       }
       .button--circle{
         @media (max-width: 425px) {
-          width: 30px;
+          width: 25px;
           min-width: 10px;
           height: 20px;
         }
@@ -296,8 +308,8 @@ body {
       b {
         font-size: 22px;
         @media (max-width: 425px) {
-          font-size: 17px;
-        }  
+          font-size: 15px;
+        }
       }
     }
 
@@ -313,6 +325,7 @@ body {
         letter-spacing: 0.01em;
         @media (max-width: 425px) {
           font-size: 17px;
+          margin-left: -12px;
         }
       }
     }
@@ -359,6 +372,9 @@ body {
 
       span {
         font-size: 22px;
+        @media (max-width: 425px) {
+          font-size: 17px;
+        }
 
         &:last-of-type {
           b {
@@ -378,13 +394,19 @@ body {
         align-items: center;
         justify-content: center;
         width: 210px;
-
         border-color: darken($color: $gray-line, $amount: 10);
+        @media (max-width: 425px) {
+          width: 160px;
+          padding: 5px 20px;
+        }
 
         span {
           color: darken($color: $gray-line, $amount: 20);
           font-weight: 500;
           font-weight: 600;
+          @media (max-width: 425px) {
+            font-size: 15px;
+          }
         }
 
         &:hover {
@@ -410,6 +432,11 @@ body {
         font-weight: 600;
         width: 210px;
         padding: 16px;
+        @media (max-width: 425px) {
+          width: 170px;
+          font-size: 15px;
+          padding: 14px;
+        }
       }
     }
   }
